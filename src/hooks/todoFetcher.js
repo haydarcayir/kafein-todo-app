@@ -2,7 +2,7 @@ import { useState, useCallback } from "react";
 import { getTodoList, postTodo, updateTodo, deleteTodo } from "../utils/apis";
 
 let getTodoListCb = null;
-let postTodoApi = null;
+let postTodoCb = null;
 
 export const useGetTodoFetcher = () => {
   const [getToDoListState, setToDoListState] = useState({
@@ -35,7 +35,7 @@ export const useGetTodoFetcher = () => {
 };
 
 export const usePostTodoFetcher = () => {
-  postTodoApi = useCallback((input) => {
+  postTodoCb = useCallback((input) => {
     postTodo(input)
       .then((res) => {
         getTodoListCb();
@@ -43,7 +43,7 @@ export const usePostTodoFetcher = () => {
       .catch((err) => {});
   });
 
-  return [postTodoApi];
+  return [postTodoCb];
 };
 
 export const usePutTodoFetcher = () => {
