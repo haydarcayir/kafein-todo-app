@@ -1,11 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./router/app";
+
+import Container from "@material-ui/core/Container";
+
 import "./index.scss";
-import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Container>
+      <App />
+    </Container>
   </React.StrictMode>,
   document.getElementById("root")
 );

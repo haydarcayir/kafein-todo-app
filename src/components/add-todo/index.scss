@@ -1,0 +1,14 @@
+.add-todo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 5px;
+
+  .MuiTextField-root {
+    width: 65%;
+  }
+  button {
+    width: 15%;
+    max-height: 50px;
+  }
+}

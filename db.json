@@ -1,5 +1,8 @@
 {
-  "todos": [],
-  "deleted": [],
-  "completed": []
+  "todos": [
+    {
+      "text": "asddasdbbbbzzzz",
+      "id": 1
+    }
+  ]
 }
