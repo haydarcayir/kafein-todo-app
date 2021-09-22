@@ -15,7 +15,6 @@ export const useGetTodoFetcher = () => {
     setToDoListState((prevState) => ({ ...prevState, isLoading: true }));
     getTodoList()
       .then((res) => {
-        console.log("res: ", res);
         setToDoListState((prevState) => ({
           ...prevState,
           data: res,
